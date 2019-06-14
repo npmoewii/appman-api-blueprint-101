@@ -1,0 +1,33 @@
+// api.apib
+// # Resouce group
+// ## Resource
+//    [/path] affect only this path
+// ### Action
+// Response status_code (content/type)
+//  (Recommend: tab 6 times)body
+
+# Message Service
+## Message Collection [/message]
+### GET Messages Collection [GET]
++ Response 200 (text/plain)
+  + Headers
+    Cache-Control: max-age=86400
+  + Body
+    Hello World!
++ Request when not login (text/plain)
+  + Headers
+    Cache-Control: max-age=86400
+  + Body
+    Hello Guest!
+## [/message]
+### POST Create Message [POST]
++ Request (text/plain)
+  + Headers
+    Authorization: Bearer ...
+  + Body
+    Hello Blueprint!
++ Response 200 (text/plain)
+  + Headers
+    Cache-Control: max-age=86400
+  + Body
+    Hello Blueprint!

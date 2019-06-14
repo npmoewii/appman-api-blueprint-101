@@ -1,0 +1,14 @@
+{
+  "name": "api-blueprint-101",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "doc": "aglio -i api.apib -s",
+    "mock": "drakov -f api.apib"
+  },
+  "dependencies": {
+    "aglio": "^2.3.0",
+    "drakov": "^1.0.4"
+  }
+}
